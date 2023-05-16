@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[1781],{1745:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/project-iadmin-framework-docs/blog/tags/hola","allTagsPath":"/project-iadmin-framework-docs/blog/tags","count":1}')}}]);
