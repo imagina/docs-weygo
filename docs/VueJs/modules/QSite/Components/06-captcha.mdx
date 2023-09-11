@@ -1,0 +1,33 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Captcha
+Load [google-recaptcha](https://www.google.com/recaptcha/about/) if API key are defined on project settings
+<Tabs>
+  <TabItem value="Props" label="Props" default>
+    <table>
+      <tr>
+        <td>checkbox</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Boolean</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Set as <code>true</code> to load <a href="https://developers.google.com/recaptcha/docs/display">reCAPTCHA v2</a> or <code>false</code> to load <a href="https://developers.google.com/recaptcha/docs/v3">reCAPTCHA v3</a>.</p>
+        </td>
+      </tr>
+    </table>
+  </TabItem>
+</Tabs>
+
+## Usage
+
+Import the `captcha` component and define it within your component:
+
+```jsx
+import captcha from '@qsite/_components/master/captcha'
+
+<captcha />
+```

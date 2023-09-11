@@ -1,0 +1,547 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Qcrud | Components
+
+## crud
+
+There is three components that build a CRUD component used on pages
+
+<Tabs>
+  <TabItem value="Props" label="Props" default>
+    <table>
+      <tr>
+        <td>crudData</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Object</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Required data to configure CRUD.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>customData</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Object</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Same structure as <code>crudData</code> but can change CRUD configuration without modifying the main CRUD configuration, only within the component.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>String</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>CRUD title to show on the index section.</p>
+        </td>
+      </tr>
+    </table>
+  </TabItem>
+  <TabItem value="crudData_Configuration" label="crudData Configuration">
+    <p>This configuration should be instantiated as a Vue file with a specific structure.</p>
+    <table>
+      <tr>
+        <td>crudId</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Integer</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Unique ID for CRUD. E.g., <code>this.$uid()</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>entityName</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>String</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Entity name to manage <a href="/docs/VueJs/modules/QSite/QsitePlugins#hook">hooks</a>; this data is called from the <a href="/docs/VueJs/modules/QSite/QsiteConfig#main">main module config</a>. E.g., <code>config("main.qsite.entityNames.recommendation")</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>apiRoute</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>String</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>API route to request data.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>permission</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>String</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Permission name. This permission should contain only the following format: <code>moduleName.entityName</code>. The CRUD component fills in the standard names for all CRUD permissions (<code>create, index, edit, destroy</code>).</p>
+        </td>
+      </tr>
+      <tr>
+        <td>extraFromField</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>String</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Config name to request additional CRUD fields from the backend.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>create</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Object</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Configuration for the create action. Set as <code>false</code> to disable this CRUD action.</p>
+          <tr>
+            <td>title</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>String</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Title to show on the button action.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>to</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Object</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Vue route to redirect to a custom form.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>toExternalUrl</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>String</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>URL to redirect to an external URL.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>method</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Function</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Method to manually create the request. This should return a promise response.</p>
+            </td>
+          </tr>
+        </td>
+      </tr>
+      <tr>
+        <td>read</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Object</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Configuration for the read action.</p>
+          <tr>
+            <td>columns</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Array</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Format of <a href="https://v1.quasar.dev/vue-components/table#defining-the-columns">quasar-table-columns</a> to display CRUD data.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>requestParams</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Object</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Standard API params to request data.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>filters</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Object</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Array list with <a href="/docs/VueJs/modules/QSite/Components/dynamicField">dynamic-fields</a> to render and add filters to the request.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>actions</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Array</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Actions for each row in the table.</p>
+              <tr>
+                <td>label/tooltip</td>
+                <td>
+                  <i class="colorGraySpan">Type:</i>
+                  <br />
+                  <code>String</code>
+                </td>
+              </tr>
+              <tr>
+                <td>icon</td>
+                <td>
+                  <i class="colorGraySpan">Type:</i>
+                  <br />
+                  <code>String</code>
+                </td>
+              </tr>
+              <tr>
+                <td>color</td>
+                <td>
+                  <i class="colorGraySpan">Type:</i>
+                  <br />
+                  <code>String</code>
+                </td>
+              </tr>
+              <tr>
+                <td>action</td>
+                <td>
+                  <i class="colorGraySpan">Type:</i>
+                  <br />
+                  <code>Function</code>
+                  <br />
+                  <i class="colorGraySpan">Description:</i>
+                  <br />
+                  <p>Action to be executed when this action is triggered.</p>
+                </td>
+              </tr>
+            </td>
+          </tr>
+          <tr>
+            <td>showAs</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>String</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Define view type between <code>grid</code> and <code>table</code> by default.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>allowToggleView</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Boolean</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <code>Enable/Disable the button action to change view.</code>
+            </td>
+          </tr>
+          <tr>
+            <td>rowsPerPageOptions</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Array</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Change the pagination options to display.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>grid</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Object</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Configure view grid mode.</p>
+              <tr>
+                <td>colClass</td>
+                <td>
+                  <i class="colorGraySpan">Type:</i>
+                  <br />
+                  <code>String</code>
+                  <br />
+                  <i class="colorGraySpan">Description:</i>
+                  <br />
+                  <p>Grid distribution.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>component</td>
+                <td>
+                  <i class="colorGraySpan">Type:</i>
+                  <br />
+                  <code>Function</code>
+                  <br />
+                  <i class="colorGraySpan">Description:</i>
+                  <br />
+                  <p>Custom card component to render as a card.</p>
+                  <p>E.g., <code>() => import('@imagina/qappointment/_components/crud/appointmentCard')</code></p>
+                </td>
+              </tr>
+            </td>
+          </tr>
+        </td>
+      </tr>
+      <tr>
+        <td>update</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Object</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Configuration for the update action. Set as <code>false</code> to disable this CRUD action.</p>
+          <tr>
+            <td>title</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>String</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Title to show on the button action.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>to</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Object</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Vue route to redirect to a custom form.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>requestParams</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Object</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Standard API params to request data for updating a row.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>method</td>
+            <td>
+              <i class="colorGraySpan">Type:</i>
+              <br />
+              <code>Function</code>
+              <br />
+              <i class="colorGraySpan">Description:</i>
+              <br />
+              <p>Method to manually create the request. This should return a promise response.</p>
+            </td>
+          </tr>
+        </td>
+      </tr>
+      <tr>
+        <td>delete</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Boolean</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Configuration to delete action. Set as <code>false</code> to disable this CRUD action.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>formLeft</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Object</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Array list with dynamic fields to render on the form's left part.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>formRight</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Object</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Array list with dynamic fields to render on the form's right part.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>getDataForm</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Function</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>This method accepts two parameters, <code>data</code> and <code>typeForm</code> (create or update). If this method is defined, it intercepts the data before the create or update request to allow modification of the data before sending it.</p>
+        </td>
+      </tr>
+    </table>
+  </TabItem>
+</Tabs>
+
+### Example
+
+  ```js
+  <template></template>
+  <script>
+    export default {
+      data() {
+        return {
+          crudId: this.$uid()
+        }
+      },
+      computed: {
+        crudData() {
+          return {
+            crudId: this.crudId,
+            entityName: config("main.qblog.entityNames.category"),
+            apiRoute: 'apiRoutes.qblog.categories',
+            permission: 'iblog.categories',
+            extraFormFields: 'iblog.crud-fields.categories',
+            create: {
+              title: this.$tr('qblog.layout.newCategory'),
+            },
+            read: {
+              columns: [
+                {name: 'id', label: this.$tr('ui.form.id'), field: 'id', style: 'width: 50px'},
+                {name: 'name', label: this.$tr('ui.form.title'), field: 'title', align: 'rigth'},
+                //...
+              ],
+              requestParams: {include: 'parent'}
+            },
+            update: {
+              title: this.$tr('qblog.layout.updateCategory'),
+              requestParams: {include: 'parent'}
+            },
+            delete: true,
+            formLeft: {
+              id: {value: ''},
+              userId: {value: this.$store.state.quserAuth.userId},
+              title: {
+                value: '',
+                type: 'input',
+                isTranslatable: true,
+                props : {
+                  label: `${this.$tr('ui.form.title')}*`,
+                  rules: [
+                    val => !!val || this.$tr('ui.message.fieldRequired')
+                  ],
+                },
+              },
+              //...
+            },
+            formRight: {
+              status: {
+                value: '1',
+                type: 'select',
+                isTranslatable: false,
+                props: {
+                  label: `${this.$tr('ui.form.status')}*`,
+                  options: [
+                    {label: this.$tr('ui.label.enabled'), value: '1'},
+                    {label: this.$tr('ui.label.disabled'), value: '0'}
+                  ],
+                  rules: [
+                    val => !!val || this.$tr('ui.message.fieldRequired')
+                  ],
+                }
+              },
+              //...
+            },
+          }
+        },
+        //Crud info
+        crudInfo() {
+          return this.$store.state.qcrudComponent.component[this.crudId] || {}
+        }
+      },
+    }
+  </script>
+  ```
+
+### Usage
+Already is included in [boot-core-components](/docs/VueJs/modules/QSite/QsiteBoot#core-components) not need import tu use
+
+```jsx
+<!---Component CRUD-->
+<crud :crud-data="import('@imagina/qblog/_crud/categories')" ref="crudComponent" :title="$tr($route.meta.title)"/>
+```
+
+## index
+Render the `Read` CRUD section as a [q-table](https://quasar.dev/vue-components/table) component
+
+## form
+Render the `Create` and `Update` section as a Form on modal component
