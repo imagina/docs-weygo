@@ -11,7 +11,7 @@ To run the project, make sure you are using the following versions:
 
 - Node 12.13.0
 - NPM 6.13.0
-- quasar/cli 1.3.2  (`npm install -g quasar-cli@1.3.2`)
+- quasar/cli 1.3.2  (`npm install -g @quasar/cli@1.3.2`) 
 :::
 
 
@@ -24,7 +24,7 @@ Whenever `npm install` or update package it’s possible lost the `sub-modules` 
 
 To restore the reference as `sub-modules` do this:
 1. Delete the folder `node-modules/@imagina`
-2. Revert all local git change 
+2. Revert all local git change  `git checkout .`
 3. Pull all project from the repository
 4. Finally do the next step…
 :::

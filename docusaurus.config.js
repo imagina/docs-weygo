@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Imagina Doc',
+  tagline: 'Documentation about imagina',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url: 'https://imagina.github.com',
@@ -63,11 +63,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/IM_-_Rojo4x-100.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Home',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Imagina Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -98,12 +98,33 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'VueJS',
+                to: '/docs/VueJs/tutorials/intro',
               },
             ],
           },
           {
+            title: 'Base Quasar',
+            items: [
+              {
+                label: 'Getting Started',
+                to: '/docs/VueJs/tutorials/intro',
+              },
+              {
+                label: 'Installation',
+                to: '/docs/VueJs/installation/installinginaproject',
+              },
+              {
+                label: 'Configurations',
+                to: '/docs/VueJs/configurations/ConfigSrc',
+              },
+              {
+                label: 'Modules',
+                to: '/docs/VueJs/modules/intro',
+              }
+            ],
+          },
+          /*{
             title: 'Community',
             items: [
               {
@@ -132,9 +153,9 @@ const config = {
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],
-          },
+          },*/
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Imagina Documentation, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
