@@ -1,0 +1,8 @@
+{
+  "label": "Qcrud",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Contains main configurations to create CRUD"
+  }
+}

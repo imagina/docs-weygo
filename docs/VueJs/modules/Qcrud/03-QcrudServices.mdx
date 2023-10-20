@@ -1,0 +1,420 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Qcrud | Services
+
+## baseServices
+
+`baseServices` contains the main CRUD service methods to maintain a consistent structure for all requests.
+
+<Tabs>
+  <TabItem value="create" label="Create" default>
+    <table>
+        <tr>
+            <td>Params</td>
+            <tr>
+                <td>configName</td>
+                <td>
+                    <i class="colorGraySpan">Type:</i>
+                    <br />
+                    <code>String</code>
+                    <br />
+                    <i class="colorGraySpan">Description:</i>
+                    <p>Config name with the API route. E.g., <code>'apiRoutes.quser.users'</code>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td>
+                    <i class="colorGraySpan">Type:</i>
+                    <br />
+                    <code>Object</code>
+                    <br />
+                    <i class="colorGraySpan">Description:</i>
+                    <p>Record data to send the request. Every row in camelCase is transformed to snake_case.</p>
+                </td>
+            </tr>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>
+            <pre><code>this.$crud.create(configName, data);</code></pre>
+            </td>
+        </tr>
+    </table>
+  </TabItem>
+  <TabItem value="index" label="Index">
+    <table>
+        <tr>
+            <td>Params</td>
+            <td>
+            <tr>
+                <td>configName</td>
+                <td>
+                    <i class="colorGraySpan">Type:</i>
+                    <br />
+                    <code>String</code>
+                    <br />
+                    <i class="colorGraySpan">Description:</i>
+                    <p>Config name with the API route. E.g., <code>'apiRoutes.quser.users'</code>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>params</td>
+                <td>
+                    <i class="colorGraySpan">Type:</i>
+                    <br />
+                    <code>Object</code>
+                    <br />
+                    <i class="colorGraySpan">Description:</i>
+                    <p>Params to configure the request.</p>
+                    <p><i class="colorGraySpan">Params:</i></p>
+                    <span><i class="colorGraySpan">Param</i> refresh</span>
+                    <br />
+                    <span><i class="colorGraySpan">Type:</i> <code>Boolean</code></span>
+                    <br />
+                    <span><i class="colorGraySpan">Description:</i> Define if the response request should be saved in cache.</span>
+                    <hr />
+                    <span><i class="colorGraySpan">Param</i> cacheTime</span>
+                    <br />
+                    <span><i class="colorGraySpan">Type:</i> <code>Integer</code></span>
+                    <br />
+                    <span><i class="colorGraySpan">Description:</i> Number of seconds to save the response request in cache.</span>
+                    <hr />
+                    <span><i class="colorGraySpan">Param</i> params</span>
+                    <br />
+                    <span><i class="colorGraySpan">Type:</i> <code>Object</code></span>
+                    <br />
+                    <span><i class="colorGraySpan">Description:</i> API standard params to request.</span>
+                </td>
+            </tr>
+            </td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>
+            <pre><code>this.$crud.index(configName, params);</code></pre>
+            </td>
+        </tr>
+    </table>
+  </TabItem>
+  <TabItem value="show" label="Show">
+    <table>
+        <tr>
+            <td>Params</td>
+            <td>
+                <tr>
+                    <td>configName</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>String</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Config name with the API route. E.g., <code>'apiRoutes.quser.users'</code>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>criteria</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>Criteria</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Criteria to add in the base URL request. E.g., <code>baseurl.com/api/path/(criteria)</code></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>params</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>Object</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Params to configure the request.</p>
+                        <p><i class="colorGraySpan">Params:</i></p>
+                        <span><i class="colorGraySpan">Param</i> refresh</span>
+                        <br />
+                        <span><i class="colorGraySpan">Type:</i> <code>Boolean</code></span>
+                        <br />
+                        <span><i class="colorGraySpan">Description:</i> Define if the response request should be saved in cache.</span>
+                        <hr />
+                        <span><i class="colorGraySpan">Param</i> cacheTime</span>
+                        <br />
+                        <span><i class="colorGraySpan">Type:</i> <code>Integer</code></span>
+                        <br />
+                        <span><i class="colorGraySpan">Description:</i> Number of seconds to save the response request in cache.</span>
+                        <hr />
+                        <span><i class="colorGraySpan">Param</i> params</span>
+                        <br />
+                        <span><i class="colorGraySpan">Type:</i> <code>Object</code></span>
+                        <br />
+                        <span><i class="colorGraySpan">Description:</i> API standard params to request.</span>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>
+                <pre><code>this.$crud.show(configName, criteria, params);</code></pre>
+            </td>
+        </tr>
+    </table>
+  </TabItem>
+  <TabItem value="update" label="Update">
+    <table>
+        <tr>
+            <td>Params</td>
+            <td>
+                <tr>
+                    <td>configName</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>String</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Config name with the API route. E.g., <code>'apiRoutes.quser.users'</code>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>criteria</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>Criteria</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Criteria to add in the base URL request. E.g., <code>baseurl.com/api/path/(criteria)</code>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>Object</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Record data to send the request. Every row in <code>camelCase</code> is transformed to <code>snake_case</code>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>params</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>Object</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Params to configure the request.</p>
+                        <p><i class="colorGraySpan">Params:</i></p>
+                        <span><i class="colorGraySpan">Param</i> refresh</span>
+                        <br />
+                        <span><i class="colorGraySpan">Type:</i> <code>Boolean</code></span>
+                        <br />
+                        <span><i class="colorGraySpan">Description:</i> Define if the response request should be saved in cache.</span>
+                        <hr />
+                        <span><i class="colorGraySpan">Param</i> cacheTime</span>
+                        <br />
+                        <span><i class="colorGraySpan">Type:</i> <code>Integer</code></span>
+                        <br />
+                        <span><i class="colorGraySpan">Description:</i> Number of seconds to save the response request in cache.</span>
+                        <hr />
+                        <span><i class="colorGraySpan">Param</i> params</span>
+                        <br />
+                        <span><i class="colorGraySpan">Type:</i> <code>Object</code></span>
+                        <br />
+                        <span><i class="colorGraySpan">Description:</i> API standard params to request.</span>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>
+                <pre><code>this.$crud.update(configName, criteria, data, params);</code></pre>
+            </td>
+        </tr>
+    </table>
+  </TabItem>
+  <TabItem value="delete" label="Delete">
+    <table>
+        <tr>
+            <td>Params</td>
+            <td>
+                <tr>
+                    <td>configName</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>String</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Config name with the API route. E.g., <code>'apiRoutes.quser.users'</code>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>criteria</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>Criteria</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Criteria to add in the base URL request. E.g., <code>baseurl.com/api/path/(criteria)</code>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>params</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>Object</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Params to configure the request.</p>
+                        <p><i class="colorGraySpan">Params:</i></p>
+                        <span><i class="colorGraySpan">Param</i> params</span>
+                        <br />
+                        <span><i class="colorGraySpan">Type:</i> <code>Object</code></span>
+                        <br />
+                        <span><i class="colorGraySpan">Description:</i> API standard params to request.</span>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>
+                <pre><code>this.$crud.delete(configName, criteria, params);</code></pre>
+            </td>
+        </tr>
+    </table>
+  </TabItem>
+  <TabItem value="post" label="Post">
+    <table>
+        <tr>
+            <td>Params</td>
+            <td>
+                <tr>
+                    <td>configName</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>String</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Config name with the API route. E.g., <code>'apiRoutes.quser.users'</code>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>Object</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Record data to send the request.</p>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>
+                <pre><code>this.$crud.post(configName, data, params);</code></pre>
+            </td>
+        </tr>
+    </table>
+  </TabItem>
+  <TabItem value="get" label="Get">
+    <table>
+        <tr>
+            <td>Params</td>
+            <td>
+                <tr>
+                    <td>configName</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>String</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Config name with the API route. E.g., <code>'apiRoutes.quser.users'</code>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>params</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>Object</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Params to configure the request.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>Object</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Record data to send the request.</p>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>
+                <pre><code>this.$crud.get(configName, params, data);</code></pre>
+            </td>
+        </tr>
+    </table>
+  </TabItem>
+  <TabItem value="put" label="Put">
+    <table>
+        <tr>
+            <td>Params</td>
+            <td>
+                <tr>
+                    <td>configName</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>String</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Config name with the API route. E.g., <code>'apiRoutes.quser.users'</code>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>
+                        <i class="colorGraySpan">Type:</i>
+                        <br />
+                        <code>Object</code>
+                        <br />
+                        <i class="colorGraySpan">Description:</i>
+                        <p>Record data to send the request.</p>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>
+                <pre><code>this.$crud.put(configName, data, params);</code></pre>
+            </td>
+        </tr>
+    </table>
+  </TabItem>
+</Tabs>

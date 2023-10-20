@@ -1,0 +1,80 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Calendar
+Use the [`q-calendar`](https://quasarframework.github.io/quasar-ui-qcalendar/docs) Quasar component to render a calendar with events.
+<Tabs>
+  <TabItem value="Props" label="Props" default>
+    <table>
+      <tr>
+        <td>eventsData</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Array</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Data for each event to load into the calendar, including preview and full data in the modal.</p>
+          <p><code>[id,title,color,icon,image,date,mainDetails,extraDetails]</code></p>
+        </td>
+      </tr>
+      <tr>
+        <td>eventActions</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Array</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Actions to load in the event modal.</p>
+          <p><code>[label,icon,color,callBack]</code></p>
+        </td>
+      </tr>
+    </table>
+  </TabItem>
+</Tabs>
+
+## Usage
+Import the `calendar` component and define it within your component:
+
+```jsx
+import calendar from '@qsite/_components/master/calendar'
+
+<!--Calendar-->
+<calendar :events-data="eventsData" :event-actions="eventActions"/>
+
+//Event Data
+eventsData = [
+  {
+    id: this.$uid(),
+    title: 'Event Title...',
+    color: '#e57373',
+    icon: 'fas fa-calendar',
+    image: 'path/file/image',
+    date: '2020-01-01 16:00:00',
+    mainDetails: [
+      { title: 'Title...', icon: 'fas fa-calendar-check', value: 'Description...' },
+      { title: 'Title...', icon: 'fas fa-calendar-check', value: 'Description...' }
+    ],
+    extraDetails: [
+      { title: 'Title...', icon: 'fas fa-calendar-check', value: 'Description...' },
+      { title: 'Title...', icon: 'fas fa-calendar-check', value: 'Description...' },
+      { title: 'Title...', icon: 'fas fa-calendar-check', value: 'Description...' }
+    ]
+  }
+]
+
+//Event Actions
+eventActions: [
+  {
+    label: 'Action label...',
+    icon: 'fas fa-pen',
+    color: 'green',
+    callBack: (event) => {
+      // Do anything...
+    }
+  }
+]
+```

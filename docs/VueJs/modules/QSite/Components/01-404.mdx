@@ -1,0 +1,65 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 404
+Show block about not found content.
+<Tabs>
+  <TabItem value="Props" label="Props" default>
+    <table>
+      <tr>
+        <td>showButton</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>Boolean</code> 
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Toogle button to redirect page. Default <code>true</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>routeName</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>String</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Vue route name to redirect. Default <code>app.home</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>label</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>String</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Message to show. Default translation <code>this.$tr('ui.message.notFound')</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>buttonLabel</td>
+        <td>
+          <i class="colorGraySpan">Type:</i>
+          <br />
+          <code>String</code>
+          <br />
+          <i class="colorGraySpan">Description:</i>
+          <br />
+          <p>Label to button. Default translation <code>this.$tr('ui.message.goToHome')</code>.</p>
+        </td>
+      </tr>
+    </table>
+  </TabItem>
+</Tabs>
+
+## Usage
+Already is included in [boot-core-components](/docs/VueJs/modules/QSite/QsiteBoot#core-components) not need import tu use
+```js
+<not-found />
+```

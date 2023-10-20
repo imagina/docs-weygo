@@ -4,16 +4,16 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'very Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Welcome to Our Imagina Documentation',
+    Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Welcome to the comprehensive documentation of our project! This project has been developed using Vue.js in
+        conjunction with the Quasar framework.
       </>
     ),
   },
-  {
+  /*{
     title: 'Focus on What Matters',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
@@ -32,14 +32,14 @@ const FeatureList = [
         be extended while reusing the same header and footer.
       </>
     ),
-  },
+  },*/
 ];
 
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg className={styles.featureSvg} role="img"/>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
