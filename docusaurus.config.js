@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Imagina Doc',
-  tagline: 'Documentation about imagina',
-  favicon: 'img/favicon.png',
+  title: 'Docs Weygo',
+  tagline: 'Documentation about Weygo',
+  favicon: 'img/logo_dark.png',
 
   // Set the production url of your site here
   url: 'https://imagina.github.com',
@@ -45,13 +45,6 @@ const config = {
           editUrl:
             'https://github.com/imagina/project-iadmin-framework-docs/tree/main',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          /*editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',*/
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -63,12 +56,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/IM_-_Rojo4x-100.jpg',
+      image: 'img/logo_dark_theme.png',
       navbar: {
-        title: 'Home',
         logo: {
-          alt: 'Imagina Logo',
-          src: 'img/logo.svg',
+          alt: 'Weygo Logo',
+          src: 'img/logo_light_theme.png',
+          srcDark: "img/logo_dark_theme.png",
         },
         items: [
           {
@@ -77,17 +70,17 @@ const config = {
             position: 'left',
             label: 'VueJs',
           },
-         
-          /*{
-            type: 'localeDropdown',
+          {
+            type: 'docSidebar',
+            sidebarId: 'LaravelSidebar',
             position: 'left',
             label: 'Laravel',
           },
-          /*{to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+          /*{
+            type: 'docSidebar',
+            sidebarId: 'N8NSidebar',
+            position: 'left',
+            label: 'N8N',
           },*/
         ],
       },
@@ -99,6 +92,18 @@ const config = {
             items: [
               {
                 label: 'VueJS',
+                to: '/docs/VueJs/tutorials/intro',
+              },
+              {
+                label: 'API | Laravel',
+                to: '/docs/Laravel/API/modules',
+              },
+              {
+                label: 'Laravel',
+                to: '/docs/Laravel/tutorial',
+              },
+              {
+                label: 'N8N',
                 to: '/docs/VueJs/tutorials/intro',
               },
             ],
@@ -124,20 +129,20 @@ const config = {
               }
             ],
           },
-          /*{
-            title: 'Community',
+          {
+            title: 'Social Media',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Instagram',
+                href: 'https://instagram.com/imaginacolombia?igshid=MzRlODBiNWFlZA==',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Facebook',
+                href: 'https://www.facebook.com/profile.php?id=100090088891700&mibextid=ZbWKwL',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'X',
+                href: 'https://twitter.com/imaginacolombia',
               },
             ],
           },
@@ -145,22 +150,25 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'GitHub',
+                href: 'https://github.com/imagina/project-modules',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+                label: 'Imagina Software',
+                href: 'https://www.imaginacolombia.com/'
+              }
             ],
-          },*/
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Imagina Documentation, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Imagina Software, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      colorMode: {
+        respectPrefersColorScheme: true
+      }
     }),
 };
 
