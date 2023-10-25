@@ -96,11 +96,11 @@ const config = {
               },
               {
                 label: 'API | Laravel',
-                to: '/docs/API/tutorial',
+                to: '/docs/Laravel/API/modules',
               },
               {
                 label: 'Laravel',
-                to: '/docs/VueJs/tutorials/intro',
+                to: '/docs/Laravel/tutorial',
               },
               {
                 label: 'N8N',

@@ -6,12 +6,12 @@ const boxHero = [
   {
     title: 'Introduction',
     description: 'Dive into our API and acquire fundamental knowledge about it.',
-    linkTo: '/docs/API/tutorial'
+    linkTo: '/docs/Laravel/API/modules'
   },
   {
     title: 'Modules',
     description: 'Unlock the full potential of our modules through exploration.',
-    linkTo: '/docs/API/modules'
+    linkTo: '/docs/Laravel/API/modules'
   }
 ]
 
