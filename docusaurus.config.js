@@ -92,7 +92,7 @@ const config = {
             items: [
               {
                 label: 'VueJS',
-                to: '/docs/VueJs/tutorials/intro',
+                to: '/docs/VueJs/intro',
               },
               {
                 label: 'API | Laravel',
@@ -104,7 +104,7 @@ const config = {
               },
               {
                 label: 'N8N',
-                to: '/docs/VueJs/tutorials/intro',
+                to: '/docs/VueJs/intro',
               },
             ],
           },
@@ -113,7 +113,7 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/VueJs/tutorials/intro',
+                to: '/docs/VueJs/intro',
               },
               {
                 label: 'Installation',
@@ -125,7 +125,7 @@ const config = {
               },
               {
                 label: 'Modules',
-                to: '/docs/VueJs/modules/intro',
+                to: '/docs/VueJs/modules',
               }
             ],
           },

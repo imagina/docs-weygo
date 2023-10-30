@@ -1,5 +1,5 @@
 # Directory src
-This is the project main directory, where load all CMS attributes and you can do changes to `base-quasar` to project if is necessary. **The structure and configuration defined on this directory dependent of [qsite](/docs/category/qsite) module.**
+This is the project main directory, where load all CMS attributes, and you can do changes to `base-quasar` to project if is necessary. **The structure and configuration defined on this directory dependent of [qsite](/docs/VueJs/modules/Qsite) module.**
 
 ## Boot
 This folder content two files `client-side` and `server-side` that work as `boot` files according to `Quasar` [documentation](https://quasar.dev/quasar-cli/boot-files#introduction).
