@@ -4,13 +4,18 @@ import './index.css';
 
 const boxHero = [
   {
-    title: 'Introduction',
-    description: 'Dive into our API and acquire fundamental knowledge about it.',
-    linkTo: '/docs/Laravel/API/modules'
+    title: 'VueJs',
+    description: 'Kickstart Your Project with Base Quasar',
+    linkTo: '/docs/VueJs/intro'
   },
   {
-    title: 'Modules',
-    description: 'Unlock the full potential of our modules through exploration.',
+    title: 'Laravel',
+    description: 'Delve into Laravel Submodules Today',
+    linkTo: '/docs/Laravel/tutorial'
+  },
+  {
+    title: 'API',
+    description: 'Maximize your potential with Laravel\'s API.',
     linkTo: '/docs/Laravel/API/modules'
   }
 ]
