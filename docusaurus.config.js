@@ -78,6 +78,12 @@ const config = {
             position: 'left',
             label: 'Laravel',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'BlockSidebar',
+            position: 'left',
+            label: 'Blocks',
+          },
           /*{
             type: 'docSidebar',
             sidebarId: 'N8NSidebar',
