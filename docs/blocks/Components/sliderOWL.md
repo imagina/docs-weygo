@@ -2,9 +2,10 @@
 title: "Slider OWL"
 ---
 
-import DocCardList from '@theme/DocCardList';
 import {TableTabs} from '@site/src/components/table/table.jsx';
-import {sliderOWL,Block,Element} from './schemes/schemeQblock.jsx';
+import {sliderOWL} from './schemes/schemeQblock.jsx';
+
+This component is unique in that it is used in a single type of block called SliderOWL, it is used to modify the unique characteristics of the sliders being used, it is responsible for their visualization and their form of repetition.
 
 ## content
 The element content does not contain anything that affects the block
@@ -28,3 +29,9 @@ The element content does not contain anything that affects the block
   "<i class='fa fa-2x fa-angle-right text-white'></i>"
 ]
 ```
+
+## Block
+The block component is used in conjunction with Slider OWL, this happens because the block component is a general component, if you want to know more about the block [click here](./block)
+
+## Element
+TThe Element component is used in conjunction with Slider OWL, this happens because the Element component is a general component, if you want to know more about the Element [click here](./element)

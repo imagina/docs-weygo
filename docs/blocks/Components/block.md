@@ -2,9 +2,10 @@
 title: "Block"
 ---
 
-import DocCardList from '@theme/DocCardList';
 import {TableTabs} from '@site/src/components/table/table.jsx';
-import {contentCarousel,carousel,contentBlock,Block,Element} from './schemes/schemeQblock.jsx';
+import {contentBlock,Block} from './schemes/schemeQblock.jsx';
+
+This component is generally used in blocks, it is used to modify the characteristics of the block container
 
 ## content
 <TableTabs tabsContent={contentBlock} />

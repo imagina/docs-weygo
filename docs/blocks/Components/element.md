@@ -2,9 +2,10 @@
 title: "Element"
 ---
 
-import DocCardList from '@theme/DocCardList';
 import {TableTabs} from '@site/src/components/table/table.jsx';
-import {contentCarousel,carousel,contentBlock,Block,Element} from './schemes/schemeQblock.jsx';
+import {Element} from './schemes/schemeQblock.jsx';
+
+This component is generally used in blocks, it is used to modify most of the base characteristics of the elements that can be used in the block.
 
 ## content
 The element content does not contain anything that affects the block
