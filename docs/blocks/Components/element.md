@@ -1,5 +1,6 @@
 ---
 title: "Element"
+sidebar_position: 2
 ---
 
 import {TableTabs} from '@site/src/components/table/table.jsx';
