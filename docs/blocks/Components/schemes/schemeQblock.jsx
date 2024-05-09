@@ -1307,6 +1307,165 @@ export const sliderOWL = {
   ]
 }
 
+export const contentMenu = {
+  "tabs": [
+    {
+      "title": "Content",
+      "table": {
+        "data": [
+          [
+            'Menu title(en)',
+            { type: <code>Menu title → input</code>, description: <>Used to define the title that the menu will have</>},
+          ],
+        ]
+      }
+    },
+  ]
+
+}
+export const menu = {
+  "tabs": [
+    {
+      "title": "General",
+      "table": {
+        "data": [
+          [
+            'Id',
+            { type: <code>Id → input</code>, description: <>Used to enter an id in the menu container.</>},
+          ],
+          [
+            'Layout',
+            { type: <code>Layout → select (layout types)</code>, description: <>Used to select the type of layout to be used in the menu.</>},
+          ],
+          [
+            'Repository',
+            { type: <code>Repository→ select(category)</code>, description: <>Used to define the category that will be used in the menu</>},
+          ],
+          [
+            'With start',
+            { type: <code>With start → select(yes / no)</code>, description: <>Used to define whether the menu will start</>},
+          ],
+          [
+            'MenuBefore',
+            { type: <code>MenuBefore → input</code>, description: <>Used to define *******
+            </>},
+          ],
+          [
+            'MenuAfter ',
+            { type: <code>MenuAfter → input</code>, description: <>Used to define ******
+            </>},
+          ],
+          [
+            'Center',
+            { type: <code>Center→ select(yes / no)</code>, description: <>Used to define whether the menu will be centered in the block</>},
+          ],
+          [
+            'Style elements',
+            { type: <code>Style elements → select(with style, without style)</code>, description: <>Used to define whether the menu will have style</>},
+          ],
+          [
+            'Transform text',
+            { type: <code>Transform text → select(text style)</code>, description: <>Used to define the text style that the menu text will have</>},
+          ],
+          [
+            'size',
+            { type: <code>size→ input(number)</code>, description: <>Used to define the size of the text that the menu will have</>},
+          ],
+          [
+            'Color 1',
+            { type: <code>Color 1 → input</code>, description: <>Used to define the first color of the menu</>},
+          ],
+          [
+            'Color 2',
+            { type: <code>Color 2 → input</code>, description: <>Used to define the second color of the menu</>},
+          ],
+          [
+            'Menu icon style',
+            { type: <code>Menu icon style → input(awesome font)</code>, description: <>Used to define the icon that will be used in the menu</>},
+          ],
+          [
+            'CSS Link Style',
+            { type: <code>CSS Link Style → input</code>, description: <>Used to add additional styles to the menu nav-link</>},
+          ],
+          [
+            'Hover Link Style',
+            { type: <code>Hover Link Style</code>, description: <>Used to add additional styles in nav-link:hover</>},
+          ],
+          [
+            'Link styling before CSS',
+            { type: <code>Link styling before CSS → input</code>, description: <>Used to add styles in nav-link:before</>},
+          ],
+          [
+            'Hover before CSS link styling',
+            { type: <code>Hover before CSS link styling → input</code>, description: <>Used to add styles in nav-link:hover:before</>},
+          ],
+          [
+            'dropdown menu CSS style',
+            { type: <code>dropdown menu CSS style → input</code>, description: <>Used to add styles to the dropdown-menu</>},
+          ],
+          [
+            'CSS general style',
+            { type: <code>CSS general style → input</code>, description: <>Used to add styles to navs</>},
+          ],
+        ]
+      }
+    },
+    {
+      "title": "Modal",
+      "table": {
+        "data": [
+          [
+            'Modal style',
+            { type: <code>Modal style → select(type of styles)</code>, description: <>Used to define the style you want to add to the menu modal.</>},
+          ],
+          [
+            'Transform text',
+            { type: <code>Transform text → select (types of letter fonts)</code>, description: <>Used to define the type of text that the menu modal will have.</>},
+          ],
+          [
+            'Size ',
+            { type: <code>Size → input(number)</code>, description: <>Used to define the size of the text that the menu modal will have</>},
+          ],
+          [
+            'Color 1',
+            { type: <code>Color 1 → input</code>, description: <>Usedto define the first color of the menu modal</>},
+          ],
+          [
+            'Color 2',
+            { type: <code>Color 2 → input</code>, description: <>Usedto define the second color of the menu modal</>},
+          ],
+        ]
+      }
+    },
+  ]
+
+}
+
+export const logo = {
+  "tabs": [
+    {
+      "title": "General",
+      "table": {
+        "data": [
+          [
+            'Setting name',
+            { type: <code>Setting name → select(logo)</code>, description: <>Used to define which image is going to be used as a logo</>},
+          ],
+          [
+            'class(image)',
+            { type: <code>Class (image) → input</code>, description: <>Used to add classes to the logo image container</>},
+          ],
+          [
+            'class(link)',
+            { type: <code>Class (link) → input</code>, description: <>Used to add classes to the link container that has the logo</>},
+          ],
+        ]
+      }
+    },
+  ]
+
+}
+
 export const social = {
   "tabs": [
     {
