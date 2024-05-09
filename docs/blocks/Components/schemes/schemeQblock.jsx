@@ -1441,3 +1441,27 @@ export const menu = {
 
 }
 
+export const logo = {
+  "tabs": [
+    {
+      "title": "General",
+      "table": {
+        "data": [
+          [
+            'Setting name',
+            { type: <code>Setting name → select(logo)</code>, description: <>Used to define which image is going to be used as a logo</>},
+          ],
+          [
+            'class(image)',
+            { type: <code>Class (image) → input</code>, description: <>Used to add classes to the logo image container</>},
+          ],
+          [
+            'class(link)',
+            { type: <code>Class (link) → input</code>, description: <>Used to add classes to the link container that has the logo</>},
+          ],
+        ]
+      }
+    },
+  ]
+
+}
