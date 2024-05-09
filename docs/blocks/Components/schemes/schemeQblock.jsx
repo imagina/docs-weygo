@@ -1538,3 +1538,267 @@ export const social = {
   ]
 
 }
+
+export const contentContact = {
+  "tabs": [
+    {
+      "title": "Content",
+        "table": {
+          "data":[
+            [
+              'Title (en)',
+              {type: <code>Title → input</code>, description: <>Used to add a title to the top of the contact information block</>},
+            ],
+            [
+              'Subtitle  (en)',
+              {type: <code>Subtitle → input</code>, description: <>Used to add a subtitle after the title of the contact information block</>},
+            ],
+            [
+              'Telephone title (en)',
+              {type: <code>Telephone title → input</code>, description: <>Used to add a phone number at the top of the block after the subtitle</>},
+            ],
+            [
+              'Direction title (en)',
+              {type: <code>Direction title → input</code>, description: <>Used to add an address of some site at the top of the block after the phone number if it was previously added</>},
+            ],
+            [
+              'Email title (en)',
+              {type: <code>Email title → input</code>, description: <>Used to add a text with an email at the top of the block after the address if it was previously added</>},
+            ],
+          ]
+        }
+    },
+  ]
+}
+
+export const contact = {
+  "tabs": [
+    {
+      "title": "General",
+        "table": {
+          "data":[
+            [
+              'Template',
+              {type: <code>Template → select(Template 1 / Template 2)</code>, description: <>Used to define which template is going to be used in general in the block</>},
+            ],
+            [
+              'Type of container',
+              {type: <code>Type of container → select(Types of containers)</code>, description: <>Used to define the type of container to be used in the block</>},
+            ],
+            [
+              'General classes',
+              {type: <code>General classes → input</code>, description: <>Used to add classes to the block container</>},
+            ],
+            [
+              'Show title',
+              {type: <code>Show title → select(yes / no)</code>, description: <>Used to define whether the title will be displayed in the block</>},
+            ],
+            [
+              'Title Alignment',
+              {type: <code>Title Alignment → select(left, right, center)</code>, description: <>Used to define where the title will be horizontally in the block</>},
+            ],
+            [
+              'Show Subtitle',
+              {type: <code>Show Subtitle→ select(yes / no)</code>, description: <>Used to define whether the Subtitle will be displayed in the block</>},
+            ],
+            [
+              'Subtitle Alignment',
+              {type: <code>Subtitle Alignment→ select(left, right, center)</code>, description: <>Used to define where the Subtitle will be horizontally in the block</>},
+            ],
+            [
+              'Main icon alignment',
+              {type: <code>Main icon alignment → select(positions)</code>, description: <>Used to define the position of the icon in the block</>},
+            ],
+            [
+              'Alignment information',
+              {type: <code>Alignment information → select(positions)</code>, description: <>used to define the position of the information that should come after the block title</>},
+            ],
+            [
+              'Alignment title information',
+              {type: <code>Alignment title information → select(positions)</code>, description: <>Used to define the position of the title of the block information</>},
+            ],
+            [
+              'Order of elements',
+              {type: <code>Order of elements → css</code>, description: <>Used to define the order of the initial elements of the block and to be able to change it as needed</>, example: <Link to="#order-of-elements">Example </Link>},
+            ],
+            [
+              'Y Spacing (information)',
+              {type: <code>Y Spacing (information) → select(padding in PX)</code>, description: <>Used to define the space that the Y axis of the block will have</>},
+            ],
+            [
+              'X Spacing (information)',
+              {type: <code>X Spacing (information) → select(padding in PX)</code>, description: <>Used to define the space that the X axis of the block will have</>},
+            ],
+            [
+              'Y margin (information)',
+              {type: <code>Y margin (information) → select(margin in PX)</code>, description: <>Used to define the margin that the Y axis of the block will have</>},
+            ],
+            [
+              'X margin (information)',
+              {type: <code>X margin (information) → select(margin in PX)</code>, description: <>Used to define the margin that the X axis of the block will have</>},
+            ],
+            [
+              'Border type (information)',
+              {type: <code>Border type (information) → select(border position)</code>, description: <>Used to define the position of the border of the forest information</>},
+            ],
+            [
+              'Border thickness (information)',
+              {type: <code>Border thickness (information) → select(thickness in PX)</code>, description: <>Used to define the thickness of the border to be used in the block information</>},
+            ],
+            [
+              'Border Color  (information)',
+              {type: <code>Border Color  (information) → RGB</code>, description: <>Used to define the border color to be used in the block information</>},
+            ],
+            [
+              'Orientation',
+              {type: <code>Orientation→ select(yes / no)</code>, description: <>Used to ***********</>},
+            ],
+            [
+              'Title size',
+              {type: <code>Title size → input(number)</code>, description: <>Used to define the size of the block title</>},
+            ],
+            [
+              'Color class title',
+              {type: <code>Color class title → select </code>, description: <>Used to define the color to be used in the title text</>},
+            ],
+            [
+              'Title color',
+              {type: <code>Title color → RGB</code>, description: <>Used to define a color that is not in the previous selection of colors to the custom class for the title</>},
+            ],
+            [
+              'Subtitle size',
+              {type: <code>Subtitle size → input(number)</code>, description: <>Used to define the size of the block subtitle text</>},
+            ],
+            [
+              'Color class subtítulo',
+              {type: <code>Color class subtítulo → select</code>, description: <>Used to define the color to be used in the subtitle text</>},
+            ],
+            [
+              'Subtitle color',
+              {type: <code>Subtitle color → RGB</code>, description: <>Used to define a color that is not in the previous selection of colors to the custom class for the subtitle</>},
+            ],
+            [
+              'Information size',
+              {type: <code>Information size→ input(number)</code>, description: <>Used to define the text size of the block information</>},
+            ],
+            [
+              'Color class information',
+              {type: <code>Color class information→ select</code>, description: <>Used to define the color to be used in the text of the block information  </>},
+            ],
+            [
+              'Color information',
+              {type: <code>Color information→ RGB</code>, description: <>Used to define a color that is not in the previous selection of colors to the custom class for information</>},
+            ],
+            [
+              'Icon size',
+              {type: <code>Icon size → input(number)</code>, description: <>Used to define the size of the icon that will be displayed in the block</>},
+            ],
+            [
+              'Color icon',
+              {type: <code>Color icon → RGB</code>, description: <>Used to define the color of the block icon</>},
+            ],
+            [
+              'Link Color',
+              {type: <code>Link Color → input(RGB)</code>, description: <>Usedto define the color of the block links</>},
+            ],
+          ]
+        }
+    },
+    {
+      "title": "Phone",
+      "table": {
+        "data": [
+          [
+            'Show phone',
+            {type:<code>Show phone → select(yes / no)</code>, description: <>Used to define whether the phone's text is displayed</>}
+          ],
+          [
+            'Show phone title',
+            {type:<code>Show phone title → select(yes / no)</code>, description: <>Used to define whether the phone title will be displayed</>}
+          ],
+          [
+            'Show icon',
+            {type:<code>Show icon → select(yes / no)</code>, description: <>Used to define whether the icon that accompanies the phone will be displayed</>}
+          ],
+          [
+            'Custom icon',
+            {type:<code>Custom icon → input(awesome font)</code>, description: <>Used to define which icon you want to use on the part of the phone</>}
+          ],
+          [
+            'Show component icon',
+            {type:<code>Show component icon → select(yes / no)</code>, description: <>Used to define whether the components of the phone number will be displayed</>}
+          ],
+        ]
+      }
+    },
+    {
+      "title": "Direction",
+      "table": {
+        "data": [
+          [
+            'Show direction',
+            {type:<code>Show direction → select(yes / no)</code>, description: <>Used to define whether the address text is displayed</>}
+          ],
+          [
+            'Show title',
+            {type:<code>Show title → select(yes / no)</code>, description: <>Used to define whether the title of the address will be displayed</>}
+          ],
+          [
+            'Show icon',
+            {type:<code>Show icon → select(yes / no)</code>, description: <>Used to define whether the icon that accompanies the address will be displayed</>}
+          ],
+          [
+            'Custom icon',
+            {type:<code>Custom icon → input(awesome font)</code>, description: <>Used to define which icon you want to use in the address part</>}
+          ],
+          [
+            'Show component icon',
+            {type:<code>Show component icon → select(yes / no)</code>, description: <>Used to define whether the address components will be displayed</>}
+          ],
+        ]
+      }
+    },
+    {
+      "title": "Email",
+      "table": {
+        "data": [
+          [
+            'Show email',
+            {type:<code>Show email → select(yes / no)</code>, description: <>Used to define whether the email will be displayed</>}
+          ],
+          [
+            'Show title',
+            {type:<code>Show title → select(yes / no)</code>, description: <>Used to define whether the email title will be displayed</>}
+          ],
+          [
+            'Show icon',
+            {type:<code>Show icon → select(yes / no)</code>, description: <>Used to define whether the icon that accompanies the Email will be displayed</>}
+          ],
+          [
+            'Custom icon',
+            {type:<code>Custom icon → input(awesome font)</code>, description: <>Used to define which icon you want to use in the Email part</>}
+          ],
+          [
+            'Show component icon',
+            {type:<code>Show component icon → select(yes / no)</code>, description: <>Used to define whether the Email components will be displayed</>}
+          ],
+        ]
+      }
+    },
+    {
+      "title": "Social networks",
+      "table": {
+        "data": [
+          [
+            'Show social networks',
+            {type:<code>Show social networks → select(yes / no)</code>, description: <>Used to define whether social networks will be displayed in the block</>}
+          ],
+          [
+            'Position',
+            {type:<code>Position→ select(center, left, right)</code>, description: <>Used to define the position of social networks horizontally</>}
+          ],
+        ]
+      }
+    },
+  ]
+}
