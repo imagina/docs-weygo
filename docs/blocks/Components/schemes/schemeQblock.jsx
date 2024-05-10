@@ -1202,8 +1202,6 @@ export const Element = {
   ]
 }
 
-
-
 export const sliderOWL = {
   "tabs": [
     {
@@ -1304,5 +1302,62 @@ export const sliderOWL = {
       }
     },
     
+  ]
+
+}
+
+export const contentContainer = {
+  "tabs": [
+    {
+      "title": "General",
+        "table": {
+          "data":[
+            [
+              'Background image',
+              {type: <code>Background image → input(images)</code>, description: <>Used to add an image to be used as the background image of the container block</>},
+            ],
+          ]
+        }
+    },
+  ]
+}
+export const container = {
+  "tabs": [
+    {
+      "title": "General",
+      "table": {
+        "data": [
+          [
+            'Enter ID',
+            { type: <code>Enter ID → input</code>, description: <>Used to add an id (unique identifier) ​​to the containing block</>},
+          ],
+          [
+            'Container Type',
+            { type: <code>container Type → select(container types)</code>, description: <>Used to define the type of container to be used in the container block</>},
+          ],
+          [
+            'Row',
+            { type: <code>Row → input</code>, description: <>Used to  ***********
+            </>},
+          ],
+          [
+            'background gradient',
+            { type: <code>background gradient → input</code>, description: <>Used to define the container background gradient to be used in the container block </>},
+          ],
+          [
+            'General style',
+            { type: <code>General style → input</code>, description: <>Used to define the general style to be used in the container block</>},
+          ],
+          [
+            'Background options',
+            { type: <code>Background options → CSS</code>, description: <>Used to select the basic options for the background of the container block, you cannot add more options to this part</>},
+          ],
+          [
+            'Scrip',
+            { type: <code>Scrip → input</code>, description: <>Used to ******</>},
+          ],
+        ]
+      }
+    },
   ]
 }
