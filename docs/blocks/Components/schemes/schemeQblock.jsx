@@ -1202,8 +1202,6 @@ export const Element = {
   ]
 }
 
-
-
 export const sliderOWL = {
   "tabs": [
     {
@@ -1304,5 +1302,209 @@ export const sliderOWL = {
       }
     },
     
+  ]
+}
+
+export const contentEnvironment = {
+  "tabs": [
+    {
+      "title": "General",
+        "table": {
+          "data":[
+            [
+              'Text (title) (en)',
+              {type: <code>Text (title) → input</code>, description: <>Used to add a title to the custom environment container</>},
+            ],
+            [
+              'Text (subtitle) (en)',
+              {type: <code>Text (subtitle)→ input</code>, description: <>Used to add a subtitle to the custom environment container</>},
+            ],
+            [
+              'Text (summary) (en)',
+              {type: <code>Text (summary) → input</code>, description: <>Used to add a summary to the custom environment container</>},
+            ],
+            [
+              'Description (en)',
+              {type: <code>Description → HTML</code>, description: <>Used to add extra text to the description of the custom environment container</>},
+            ],
+            [
+              'Video URL (en)',
+              {type: <code>Video URL → input</code>, description: <>Used to add a video URL to use in the block</>},
+            ],
+            [
+              'Custom button text (en)',
+              {type: <code>Custom button text → input</code>, description: <>Used to add text that will be used in the block button</>},
+            ],
+            [
+              'Custom button link (en)',
+              {type: <code>Custom button link → input</code>, description: <>Used to add a link to the block button to redirect when clicking</>},
+            ],
+            [
+              'Main image',
+              {type: <code>Main image → input(image)</code>, description: <>Used to add an image to be used in the block, any image format can be used</>},
+            ],
+            [
+              'Gallery',
+              {type: <code>Gallery→ input(images)</code>, description: <>Used to add images that can be used in the block, any image format can be used up to a maximum of 12 elements</>},
+            ],
+          ]
+        }
+    },
+  ]
+}
+export const Environment = {
+  "tabs": [
+    {
+      "title": "General",
+      "table": {
+        "data": [
+          [
+            'Includes additional',
+            { type: <code>Includes additional → input</code>, description: <>Used to</>},
+          ],
+          [
+            'Position of elements',
+            { type: <code>Position of elements → select(positions in the block)</code>, description: <>Used to define what type of position is going to be used in the block</>},
+          ],
+          [
+            'Classes in images or video',
+            { type: <code>Classes in images or video → input</code>, description: <>Used to add classes to the image and/or video used in the block</>},
+          ],
+          [
+            'Classes in content',
+            { type: <code>Classes in content → input</code>, description: <>Used to add classes to the content of the block</>},
+          ],
+          [
+            'Column width',
+            { type: <code>Column width → input</code>, description: <>Used to define the width of the block columns</>},
+          ],
+          [
+            'Column spacing',
+            { type: <code>Column spacing → input</code>, description: <>Used to define the space that the columns will have between them</>},
+          ],
+          [
+            'Order of elements',
+            { type: <code>Order of elements → html</code>, description: <>Used to define the order of the vertical shape of the elements that will be displayed on the border</>, Example: <Link to="#order-of-elements" >Example</Link>},
+          ],
+        ]
+      }
+    },
+    {
+      "title": "Content",
+      "table": {
+        "data": [
+          [
+            'Classes (title)',
+            { type: <code>Clases (title) → input</code>, description: <>Used to add classes to the container to affect the block title</>},
+          ],
+          [
+            'Font size (title)',
+            { type: <code>Font size (title) → input</code>, description: <>Used to add classes to the container to affect the block title</>},
+          ],
+          [
+            'Classes (subtitle)',
+            { type: <code>Classes (subtitle) → input</code>, description: <>Used to add classes to the container to affect the block subtitle</>},
+          ],
+          [
+            'Font size (subtitle)',
+            { type: <code>Font size (subtitle) → input</code>, description: <>Used to add classes to the container to affect the block subtitle</>},
+          ],
+          [
+            'Classes (summary)',
+            { type: <code>Classes (summary) → input</code>, description: <>Used to add classes to the container to affect the block summary</>},
+          ],
+          [
+            'Font size (summary)',
+            { type: <code>Font size (summary) → input</code>, description: <>Used to add classes to the container to affect the block summary</>},
+          ],
+          [
+            'Classes (description)',
+            { type: <code>Classes (description) → input</code>, description: <>Used to add classes to the container to affect the block description</>},
+          ],
+        ]
+      }
+    },
+    {
+      "title": "Image and video",
+      "table": {
+        "data": [
+          [
+            'Class on (image)',
+            { type: <code>Class on (image) → input</code>, description: <>Used to add classes to the block image</>},
+          ],
+          [
+            'class in (image)',
+            { type: <code>class in (image) → input</code>, description: <>Used to add classes to the block image container</>},
+          ],
+          [
+            'Additional styles (image)',
+            { type: <code>Additional styles (image) → input</code>, description: <>Used to add style to the block image</>},
+          ],
+          [
+            'Responsive (video)',
+            { type: <code>Responsive (video) → select(video size format)</code>, description: <>Used to define the type of aspect that will be used in the block video</>},
+          ],
+          [
+            'Classes (video)',
+            { type: <code>Classes (video) → input</code>, description: <>Used to add classes to the block video</>},
+          ],
+        ]
+      }
+    },
+    {
+      "title": "Button",
+      "table": {
+        "data": [
+          [
+            'show',
+            { type: <code>show→ select (yes / no)</code>, description: <>Used to define whether the button will be displayed in the custom environment block</>},
+          ],
+          [
+            'Text size',
+            { type: <code>Text size → input(number+free format)</code>, description: <>Used to define the size of the text of the button of the custom environment block</>},
+          ],
+          [
+            'Icon type',
+            { type: <code>Icon type → input(awesome font)</code>, description: <>Used to define what type of icon will be used in the button of the custom environment block</>},
+          ],
+          [
+            'Icon position',
+            { type: <code>Icon position → select(position on the button)</code>, description: <>Used to define the position of the icon in the block button</>},
+          ],
+          [
+            'Button style',
+            { type: <code>Button style → select(button styles)</code>, description: <>Used to define the style that the button will have in the block</>},
+          ],
+          [
+            'Spacing',
+            { type: <code>Spacing → select(defined size)</code>, description: <>Used to define the size of the button spacing to move the button edges further away from the text</>},
+          ],
+          [
+            'General classes',
+            { type: <code>General classes → input</code>, description: <>Used to add classes to the elements that the block container has</>},
+          ],
+          [
+            'Alignment',
+            { type: <code>Alignment → select (position on the block)</code>, description: <>Used to define the horizontal position that the content of the block's custom environment will have</>},
+          ],
+          [
+            'Target ',
+            { type: <code>Target  → select (position in depth)</code>, description: <>Used to define the position in depth of the block elements</>},
+          ],
+          [
+            'Color ',
+            { type: <code>Color  → select (colors)</code>, description: <>Used to define the color that the button in the block will use</>},
+          ],
+          [
+            'Custom button configuration',
+            { type: <code>Custom button configuration → CSS</code>, description: <>Used to add additional styles to the button, but you cannot add more styles to the table but you can modify it</>, example: <Link to="#custom-button-configuration" >Example</Link>},
+          ],
+          [
+            '',
+            { type: <code></code>, description: <></>},
+          ],
+        ]
+      }
+    },
   ]
 }
