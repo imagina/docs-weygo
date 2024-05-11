@@ -1202,8 +1202,6 @@ export const Element = {
   ]
 }
 
-
-
 export const sliderOWL = {
   "tabs": [
     {
