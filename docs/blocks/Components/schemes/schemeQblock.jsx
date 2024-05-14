@@ -1304,3 +1304,141 @@ export const sliderOWL = {
     
   ]
 }
+
+export const contentLista = {
+  "tabs": [
+    {
+      "title": "General",
+        "table": {
+          "data":[
+            [
+              'Title (en)',
+              {type: <code>Title → input</code>, description: <>Used to add text to be used as a title at the top of the block.</>},
+            ],
+            [
+              'Subtitulo (es)',
+              {type: <code>subtítulo → HTML</code>, description: <>Used to add text with attributes defined in html to be used as a subtitle in the block part.</>},
+            ],
+          ]
+        }
+    },
+  ]
+}
+export const lista = {
+  "tabs": [
+    {
+      "title": "General",
+      "table": {
+        "data": [
+          [
+            'Identifier',
+            { type: <code>Identifier →input</code>, description: <>Used to add an identifier to the list block</>},
+          ],
+          [
+            'Layout',
+            { type: <code>Layout → select (layout type)</code>, description: <>Used to define the type of layout to be used in the list block</>},
+          ],
+          [
+            'General classes',
+            { type: <code>General classes → input</code>, description: <>Used to add classes to the block in general</>},
+          ],
+          [
+            'Columns',
+            { type: <code>Columns → input(bootstrap)</code>, description: <>Used to define the number of columns that will be used in the block using bootstrap classes</>},
+          ],
+        ]
+      }
+    },
+    {
+      "title": "Text (title y subtitle)",
+      "table": {
+        "data": [
+          [
+            'Position',
+            { type: <code>Position → select(title and subtitle position)</code>, description: <>Used to define the positions that the title and subtitle will have relative to each other in the block</>},
+          ],
+          [
+            'Alignment',
+            { type: <code>Alignment → select(position on the block)</code>, description: <>Used to define the horizontal position of the title and subtitle in the block</>},
+          ],
+          [
+            'Line below the text',
+            { type: <code>Line below the text → input</code>, description: <>Used to define whether the text will have a line after or before its container</>},
+          ],
+          [
+            'Classes (title)',
+            { type: <code>Classes (title) → input</code>, description: <>Used to add classes to the title container so that the title is affected</>},
+          ],
+          [
+            'Font size (title)',
+            { type: <code>Font size (title) → input(number)</code>, description: <>Used to define the size of the title texts</>},
+          ],
+          [
+            'Transform(title)',
+            { type: <code>Transform(title) → select (letter format)</code>, description: <>Used to define the font format that will be used in the block title, modifying all the letters to the chosen format</>},
+          ],
+          [
+            'Color (title)',
+            { type: <code>Color (title) → select(colors)</code>, description: <>Used to define the color that will be used in the block title</>},
+          ],
+          [
+            'Bold font (title)',
+            { type: <code>Bold font (title) → select (bold type)</code>, description: <>Used to define the type of bold that will be used in the block title</>},
+          ],
+          [
+            'Letter spacing (title)',
+            { type: <code>Letter spacing (title) → input(number)</code>, description: <>Used to define the space that the letters of the block title will have between them.</>},
+          ],
+          [
+            'Icon (title)',
+            { type: <code>Icon (title) → input(awesome font)</code>, description: <>Used to define the icon that will be used in the block title container</>},
+          ],
+          [
+            'Url (title)',
+            { type: <code>Url (title) → input</code>, description: <>Used to add a page address to the title text</>},
+          ],
+          [
+            'Target (title)',
+            { type: <code>Target (title) → input</code>, description: <>Used to define how the links will be displayed in the same or in a different tab</>},
+          ],
+          [
+            'Color icon (title)',
+            { type: <code>Color icon (title) → select (icon colors)</code>, description: <>Used to define a color for the icon that has the title</>},
+          ],
+          [
+            'Classes (subtitle)',
+            { type: <code>Classes (subtitle) → input</code>, description: <>Used to place classes on the carousel title container, both CSS and bootstrap classes</>},
+          ],
+          [
+            'Font size (subtitle)',
+            { type: <code>Font size (subtitle) → input</code>, description: <>Used to define the font size of the subtitle</>},
+          ],
+          [
+            'Transform(subtitle)',
+            { type: <code>Transform(subtitle) → select (letter format)</code>, description: <>Used to define the letter format that will be used in the subtitle of the block, modifying all the letters to the chosen format</>},
+          ],
+          [
+            'Color (subtitle)',
+            { type: <code>Color (subtitle) → select(colors)</code>, description: <>Used to define the color that will be used in the block subtitle</>},
+          ],
+          [
+            'Bolt font(subtitle)',
+            { type: <code>Bolt font (subtitle) → select (bold type)</code>, description: <>Used to define the type of bold that will be used in the subtitle of the block</>},
+          ],
+          [
+            'Letter Spacing (subtitle)',
+            { type: <code>Letter Spacing (subtítulo) → input(number)</code>, description: <>Used to define the space that the letters of the block subtitle will have between them</>},
+          ],
+          [
+            'Line',
+            { type: <code>Line→ select (position for line)</code>, description: <>Used to define the position of the line that will be used after the title or subtitle container, or else the line will be used</>},
+          ],
+          [
+            'Line configuration',
+            { type: <code>Line configuration → CSS</code>, description: <>Used to define the background color, width, height and margin of the line that will be used after the title or subtitle container</>, example:<Link to="#line-configuration">Example</Link>},
+          ],
+        ]
+      }
+    },
+  ]
+}
