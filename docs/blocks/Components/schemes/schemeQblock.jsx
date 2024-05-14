@@ -1304,3 +1304,32 @@ export const sliderOWL = {
     
   ]
 }
+
+export const shopping  = {
+  "tabs": [
+    {
+      "title": "General",
+      "table": {
+        "data": [
+          [
+            'Layout',
+            { type: <code>Layout → select(layout types)</code>, description: <>Used to define which layout will be used in the shopping cart block</>},
+          ],
+          [
+            'Icon',
+            { type: <code>Icon → input(awesome font)</code>, description: <>Used to add an icon to the block with awesome font classes</>},
+          ],
+          [
+            'Class',
+            { type: <code>Class → input</code>, description: <>Used to add classes to the shopping cart block container</>},
+          ],
+          [
+            'Styles',
+            { type: <code>Styles → input</code>, description: <>Used to add styles in CSS to affect the shopping cart block container</>},
+          ],
+        ]
+      }
+    },
+    
+  ]
+}
