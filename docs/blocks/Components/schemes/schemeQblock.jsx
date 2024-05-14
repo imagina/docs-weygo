@@ -1304,3 +1304,91 @@ export const sliderOWL = {
     
   ]
 }
+
+export const contentWhatsapp = {
+  "tabs": [
+    {
+      "title": "general",
+      "table": {
+        "data": [
+          [
+            'Titulo (es)',
+            { type: <code>Title → input</code>, description: <>Used to add text to be used as a title in the block</>},
+          ],
+          [
+            'Internal title (en)',
+            { type: <code>Internal title → input</code>, description: <>Used to add text to be used as an internal title in the block</>},
+          ],
+          [
+            'Internal subtitle (en)',
+            { type: <code>Internal subtitle → input</code>, description: <>Used to add text to be used as an internal subtitle in the block</>},
+          ],
+        ]
+      }
+    },
+    
+  ]
+}
+export const whatsapp = {
+  "tabs": [
+    {
+      "title": "general",
+      "table": {
+        "data": [
+          [
+            'Layout',
+            { type: <code>Layout → select</code>, description: <>Used to define the type of layout that is going to be used in the block</>},
+          ],
+          [
+            'Top',
+            { type: <code>Top → input</code>, description: <>Used to *****</>},
+          ],
+          [
+            'Bottom',
+            { type: <code>Bottom → input</code>, description: <>Used to *****</>},
+          ],
+          [
+            'Right',
+            { type: <code>Right → input</code>, description: <>Used to *****</>},
+          ],
+          [
+            'Left ',
+            { type: <code>Left → input</code>, description: <>Used to *****</>},
+          ],
+        ]
+      }
+    },
+    {
+      "title": "Dropdown",
+      "table": {
+        "data": [
+          [
+            'Dropdown Alignment',
+            { type: <code>Dropdown Alignment → select(right, left)</code>, description: <>Used to define the position of the dropdown within the block</>},
+          ],
+          [
+            'Text alignment inside',
+            { type: <code>Text alignment inside → select(type text alignment)</code>, description: <>Used to define the type of alignment that block text will have, for example, the text alignment of docs</>},
+          ],
+          [
+            'Label color',
+            { type: <code>Label color → input</code>, description: <>Used to define the color that will be used in the block label</>},
+          ],
+          [
+            'Number color',
+            { type: <code>Number color → input</code>, description: <>Used to define the color that will be used in the block numbers</>},
+          ],
+          [
+            '(layout 5) Alignment of the ………….',
+            { type: <code>(layout 5) Alignment of the ************ → select(hidden, left, right)</code>, description: <>Used to *****</>},
+          ],
+          [
+            '(layout 5) Alignment of the ************',
+            { type: <code>(layout 5) Alignment of the ************ → select(hidden, left, right)</code>, description: <>Used to</>},
+          ],
+        ]
+      }
+    },
+    
+  ]
+}
