@@ -14,7 +14,7 @@ This component is unique where it is used in a single type of block called a car
 <TableTabs tabsContent={carousel} />
 
 ### Example 
-  #### Responsive:
+#### Responsive:
 
     ```CSS
     {
@@ -31,7 +31,7 @@ This component is unique where it is used in a single type of block called a car
     ```
 
 
-  #### Line Settings:
+#### Line Settings:
 
   ```CSS
    {
