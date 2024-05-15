@@ -1360,7 +1360,7 @@ export const Environment = {
         "data": [
           [
             'Includes additional',
-            { type: <code>Includes additional → input</code>, description: <>Used to</>},
+            { type: <code>Includes additional → input</code>, description: <>Used to serve to include a blade view of the theme from views</>},
           ],
           [
             'Position of elements',
