@@ -1202,8 +1202,6 @@ export const Element = {
   ]
 }
 
-
-
 export const sliderOWL = {
   "tabs": [
     {
@@ -1299,6 +1297,94 @@ export const sliderOWL = {
           [
             'Bottom',
             { type: <code>Bottom → input(number)</code>, description: <>Used to define the space that will have at the bottom of the dots</>},
+          ],
+        ]
+      }
+    },
+    
+  ]
+}
+
+export const contentWhatsapp = {
+  "tabs": [
+    {
+      "title": "general",
+      "table": {
+        "data": [
+          [
+            'Titulo (es)',
+            { type: <code>Title → input</code>, description: <>Used to add text to be used as a title in the block</>},
+          ],
+          [
+            'Internal title (en)',
+            { type: <code>Internal title → input</code>, description: <>Used to add text to be used as an internal title in the block</>},
+          ],
+          [
+            'Internal subtitle (en)',
+            { type: <code>Internal subtitle → input</code>, description: <>Used to add text to be used as an internal subtitle in the block</>},
+          ],
+        ]
+      }
+    },
+    
+  ]
+}
+export const whatsapp = {
+  "tabs": [
+    {
+      "title": "general",
+      "table": {
+        "data": [
+          [
+            'Layout',
+            { type: <code>Layout → select</code>, description: <>Used to define the type of layout that is going to be used in the block</>},
+          ],
+          [
+            'Top',
+            { type: <code>Top → input</code>, description: <>Used to define a position at the top of the WhatsApp element. If a value is entered in this box, its opposite, the bottom box must be unset</>},
+          ],
+          [
+            'Bottom',
+            { type: <code>Bottom → input</code>, description: <> Used to define a position at the bottom of the WhatsApp element, if a value is entered in this box, its opposite, the top box has to be unset</>},
+          ],
+          [
+            'Right',
+            { type: <code>Right → input</code>, description: <>Used to define a position on the right side of the WhatsApp element. If a value is entered in this box, its opposite, the left box must be unset</>},
+          ],
+          [
+            'Left ',
+            { type: <code>Left → input</code>, description: <>Used to define a position on the left side of the WhatsApp element. If a value is entered in this box, its opposite, the right box must be unset</>},
+          ],
+        ]
+      }
+    },
+    {
+      "title": "Dropdown",
+      "table": {
+        "data": [
+          [
+            'Dropdown Alignment',
+            { type: <code>Dropdown Alignment → select(right, left)</code>, description: <>Used to define the position of the dropdown within the block</>},
+          ],
+          [
+            'Text alignment inside',
+            { type: <code>Text alignment inside → select(type text alignment)</code>, description: <>Used to define the type of alignment that block text will have, for example, the text alignment of docs</>},
+          ],
+          [
+            'Label color',
+            { type: <code>Label color → input</code>, description: <>Used to define the color that will be used in the block label</>},
+          ],
+          [
+            'Number color',
+            { type: <code>Number color → input</code>, description: <>Used to define the color that will be used in the block numbers</>},
+          ],
+          [
+            '(layout 5) Message Alignment',
+            { type: <code>(layout 5) Message Alignment → select(hidden, left, right)</code>, description: <>Used to define in which position the chat message begins to appear</>},
+          ],
+          [
+            '(layout 5) Window Alignment',
+            { type: <code>(layout 5) Window Alignment → select(left, right)</code>, description: <>Used to define the alignment of the block's chat window</>},
           ],
         ]
       }
