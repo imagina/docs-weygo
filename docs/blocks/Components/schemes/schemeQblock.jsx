@@ -1337,7 +1337,7 @@ export const container = {
           ],
           [
             'Row',
-            { type: <code>Row → input</code>, description: <>Used to  ***********
+            { type: <code>Row → input</code>, description: <>Used to add a class to the container to the first row of the general id
             </>},
           ],
           [
@@ -1353,8 +1353,8 @@ export const container = {
             { type: <code>Background options → CSS</code>, description: <>Used to select the basic options for the background of the container block, you cannot add more options to this part</>},
           ],
           [
-            'Scrip',
-            { type: <code>Scrip → input</code>, description: <>Used to ******</>},
+            'Script',
+            { type: <code>Script → input</code>, description: <>Used to add javascript to affect the container</>},
           ],
         ]
       }
