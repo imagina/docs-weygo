@@ -1202,8 +1202,6 @@ export const Element = {
   ]
 }
 
-
-
 export const sliderOWL = {
   "tabs": [
     {
@@ -1304,5 +1302,29 @@ export const sliderOWL = {
       }
     },
     
+  ]
+}
+
+export const copyright = {
+  "tabs": [
+    {
+      "title": "General",
+      "table": {
+        "data": [
+          [
+            'withIconCopyright',
+            { type: <code>withIconCopyright → select(yes / no)</code>, description: <>Used to define whether the copyright icon will be displayed</>},
+          ],
+          [
+            'Classes',
+            { type: <code>Classes → input</code>, description: <>Used to add classes to the block's copyright icon container</>},
+          ],
+          [
+            'css styles',
+            { type: <code>css styles → input(CSS)</code>, description: <>Used to add styles to the block's copyright icon container</>},
+          ],
+        ]
+      }
+    },
   ]
 }
