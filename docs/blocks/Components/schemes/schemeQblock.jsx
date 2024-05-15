@@ -1347,13 +1347,11 @@ export const menu = {
           ],
           [
             'MenuBefore',
-            { type: <code>MenuBefore → input</code>, description: <>Used to define *******
-            </>},
+            { type: <code>MenuBefore → input</code>, description: <>Used to define which menu will be used in the first position of the menu block</>},
           ],
           [
             'MenuAfter ',
-            { type: <code>MenuAfter → input</code>, description: <>Used to define ******
-            </>},
+            { type: <code>MenuAfter → input</code>, description: <>UUsed to define which menu will be used in the second position of the menu block</>},
           ],
           [
             'Center',
