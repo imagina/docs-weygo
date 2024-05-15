@@ -1419,7 +1419,7 @@ export const contact = {
             ],
             [
               'Orientation',
-              {type: <code>Orientation→ select(yes / no)</code>, description: <>Used to ***********</>},
+              {type: <code>Orientation→ select(yes / no)</code>, description: <>Used to change the behavior of icons - titles and contact values ​​from vertical to horizontal</>},
             ],
             [
               'Title size',
