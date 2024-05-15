@@ -1379,11 +1379,11 @@ export const whatsapp = {
             { type: <code>Number color → input</code>, description: <>Used to define the color that will be used in the block numbers</>},
           ],
           [
-            '(layout 5) Alignment of the ………….',
+            '(layout 5) Message Alignment',
             { type: <code>(layout 5) Message Alignment → select(hidden, left, right)</code>, description: <>Used to define in which position the chat message begins to appear</>},
           ],
           [
-            '(layout 5) Alignment of the ************',
+            '(layout 5) Window Alignment',
             { type: <code>(layout 5) Window Alignment → select(left, right)</code>, description: <>Used to define the alignment of the block's chat window</>},
           ],
         ]
