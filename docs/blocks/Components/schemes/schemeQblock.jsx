@@ -1306,3 +1306,46 @@ export const sliderOWL = {
     
   ]
 }
+
+export const contentWishList = {
+  "tabs": [
+    {
+      "title": "General",
+        "table": {
+          "data":[
+            [
+              'Wish list text (en)',
+              {type: <code>Wish list text → input</code>, description: <>Used to add a message to the wish list</>},
+            ],
+          ]
+        }
+    },
+  ]
+}
+export const wishList = {
+  "tabs": [
+    {
+      "title": "General",
+      "table": {
+        "data": [
+          [
+            'showButton',
+            { type: <code>showButton → select(yes / no)</code>, description: <>Used to define whether the button will be displayed in the wish list block</>},
+          ],
+          [
+            'Icon',
+            { type: <code>Icon → input(awesome font)</code>, description: <>Used to define the icon to be used in the wish list block</>},
+          ],
+          [
+            'Classes',
+            { type: <code>Classes → input</code>, description: <>Used to add classes to the wishlist container of the wishlist block</>},
+          ],
+          [
+            'Styles',
+            { type: <code>Styles→ input</code>, description: <>Used to add styles to the wishlist container in the wishlist block</>},
+          ],
+        ]
+      }
+    },
+  ]
+}
