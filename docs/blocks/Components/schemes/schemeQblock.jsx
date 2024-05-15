@@ -1341,19 +1341,19 @@ export const whatsapp = {
           ],
           [
             'Top',
-            { type: <code>Top → input</code>, description: <>Used to *****</>},
+            { type: <code>Top → input</code>, description: <>Used to define a position at the top of the WhatsApp element. If a value is entered in this box, its opposite, the bottom box must be unset</>},
           ],
           [
             'Bottom',
-            { type: <code>Bottom → input</code>, description: <>Used to *****</>},
+            { type: <code>Bottom → input</code>, description: <> Used to define a position at the bottom of the WhatsApp element, if a value is entered in this box, its opposite, the top box has to be unset</>},
           ],
           [
             'Right',
-            { type: <code>Right → input</code>, description: <>Used to *****</>},
+            { type: <code>Right → input</code>, description: <>Used to define a position on the right side of the WhatsApp element. If a value is entered in this box, its opposite, the left box must be unset</>},
           ],
           [
             'Left ',
-            { type: <code>Left → input</code>, description: <>Used to *****</>},
+            { type: <code>Left → input</code>, description: <>Used to define a position on the left side of the WhatsApp element. If a value is entered in this box, its opposite, the right box must be unset</>},
           ],
         ]
       }
@@ -1380,11 +1380,11 @@ export const whatsapp = {
           ],
           [
             '(layout 5) Alignment of the ………….',
-            { type: <code>(layout 5) Alignment of the ************ → select(hidden, left, right)</code>, description: <>Used to *****</>},
+            { type: <code>(layout 5) Message Alignment → select(hidden, left, right)</code>, description: <>Used to define in which position the chat message begins to appear</>},
           ],
           [
             '(layout 5) Alignment of the ************',
-            { type: <code>(layout 5) Alignment of the ************ → select(hidden, left, right)</code>, description: <>Used to</>},
+            { type: <code>(layout 5) Window Alignment → select(left, right)</code>, description: <>Used to define the alignment of the block's chat window</>},
           ],
         ]
       }
