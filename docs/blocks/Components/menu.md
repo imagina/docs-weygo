@@ -5,6 +5,7 @@ title: "Menu"
 import {TableTabs} from '@site/src/components/table/table.jsx';
 import {contentMenu,menu} from './schemes/schemeQblock.jsx';
 
+This component is unique where it is used in a single type of block called menu, it is used to modify the characteristics of the menu block
 
 <TableTabs tabsContent={contentMenu} />
 
