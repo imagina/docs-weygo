@@ -31,7 +31,8 @@ export const contentCarousel = {
         }
       },
     ]
-  }
+}
+
 export const carousel = {
     "tabs": [
       {
@@ -260,7 +261,7 @@ export const carousel = {
         }
       },
     ]
-  }
+}
 
 export const contentBlock = {
   "tabs": [
@@ -310,6 +311,7 @@ export const contentBlock = {
     },
   ]
 }
+
 export const Block = {
   "tabs": [
     {
@@ -1202,8 +1204,6 @@ export const Element = {
   ]
 }
 
-
-
 export const sliderOWL = {
   "tabs": [
     {
@@ -1305,4 +1305,77 @@ export const sliderOWL = {
     },
     
   ]
+}
+
+export const social = {
+  "tabs": [
+    {
+      "title": "General",
+      "table": {
+        "data": [
+          [
+            'Identifier',
+            { type: <code>Identifier→ input</code>, description: <>Used to define an identifier for the social network container</>},
+          ],
+          [
+            'Display',
+            { type: <code>Display → select(display types)</code>, description: <>Used to define the display that will be used in the social media container</>},
+          ],
+          [
+            'Magin',
+            { type: <code>Margin → input(free format)</code>, description: <>Used to define the margin that the social network container will have.</>},
+          ],
+          [
+            'Base style',
+            { type: <code>Base style → select(types of styles)</code>, description: <>Used to define the base style to be used in the social media container</>},
+          ],
+          [
+            'Icon size',
+            { type: <code>Icon size → input(free format)</code>, description: <>Used to define the size of the icon that will be used in the social media container</>},
+          ],
+          [
+            'Background size',
+            { type: <code>Background size → input(free format)</code>, description: <>Used to define the size of the background that will be used in the social media container</>},
+          ],
+          [
+            'Color 1',
+            { type: <code>Color 1 → input</code>, description: <>Used to define the first color of social media icons</>},
+          ],
+          [
+            'Color 2',
+            { type: <code>Color 2 → input</code>, description: <>Used to define the second color of social media icons</>},
+          ],
+          [
+            'Border size',
+            { type: <code>Border size → input(number)</code>, description: <>Used to define the size of the border that will be used in the border icons</>},
+          ],
+          [
+            'Border radius',
+            { type: <code>Border radius → input(number)</code>, description: <>Used to define the radius that the social media icon will have</>},
+          ],
+          [
+            'Border type',
+            { type: <code>Border type → Select(border positions)</code>, description: <>Used to define in which positions of the border it is going to be used</>},
+          ],
+          [
+            'Animation',
+            { type: <code>Animation → select(animation type)</code>, description: <>Used to define the animation that the social network icons will have</>},
+          ],
+          [
+            'background shadow',
+            { type: <code>background shadow → input</code>, description: <>Used to define the shadow that will be used in the background of the social media icon container</>},
+          ],
+          [
+            'Text shadow',
+            { type: <code>Text shadow → input</code>, description: <>Used to define the shading in the text and icon of social networks</>},
+          ],
+          [
+            'with whatsapp',
+            { type: <code>with whatsapp → select(yes / no)</code>, description: <>Used to define whether WhatsApp will be used in the social network icon container</>},
+          ],
+        ]
+      }
+    },
+  ]
+
 }
