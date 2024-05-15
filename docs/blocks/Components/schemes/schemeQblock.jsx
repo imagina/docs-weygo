@@ -1202,8 +1202,6 @@ export const Element = {
   ]
 }
 
-
-
 export const sliderOWL = {
   "tabs": [
     {
@@ -1304,5 +1302,121 @@ export const sliderOWL = {
       }
     },
     
+  ]
+}
+
+export const contentMap = {
+  "tabs": [
+    {
+      "title": "General",
+        "table": {
+          "data":[
+            [
+              'Title (en)',
+              {type: <code>Title → input</code>, description: <>Used to add text to be used as a title at the top of the block</>},
+            ],
+            [
+              'Location name (en)',
+              {type: <code>Location name → input</code>, description: <>Used to add a name to the location shown on the block map </>},
+            ],
+
+          ]
+        }
+    },
+  ]
+}
+export const map = {
+  "tabs": [
+    {
+      "title": "General",
+      "table": {
+        "data": [
+          [
+            'Map',
+            { type: <code>Map → select(map)</code>, description: <>Used to define the site where the map will be displayed, selecting the site on a minimap</>},
+          ],
+          [
+            'Map style',
+            { type: <code>Map style → select(Map style)</code>, description: <>Used to define the style of the map which will be used in the block</>},
+          ],
+          [
+            'Latitude location (optional)',
+            { type: <code>Latitude location (optional) → input</code>, description: <>Used to define the latitude (It is the angular distance between a point on the earth's surface and the Equator) of the location selected on the block map, this box is optional</>},
+          ],
+          [
+            'Location length (optional)',
+            { type: <code>Location length (optional) → input</code>, description: <>Used to define the longitude (It is the distance in degrees, minutes and seconds with respect to the main meridian) of the selected location on the block map, this box is optional</>},
+          ],
+          [
+            'Classes',
+            { type: <code>Classes → input</code>, description: <>Used to add classes to the block map container</>},
+          ],
+          [
+            'Zoom',
+            { type: <code>Zoom → input(number)</code>, description: <>Used to define the zoom that the map will have when it appears in the block</>},
+          ],
+          [
+            'Maximum zoom allowed on the map',
+            { type: <code></code>, description: <>Used to define the maximum size that the zoom of the block map can have</>},
+          ],
+          [
+            'Minimum zoom allowed on the map',
+            { type: <code>Minimum zoom allowed on the map → input(number)</code>, description: <>Used to define the minimum size that the zoom of the block map can have</>},
+          ],
+          [
+            'Identifier',
+            { type: <code>Identifier → input(number)</code>, description: <>Used to define the identification number of the block map</>},
+          ],
+          [
+            'Map for modal',
+            { type: <code>Map for modal → select(yes / no)</code>, description: <>Used to ********</>},
+          ],
+          [
+            'Map Width',
+            { type: <code>Map Width → input(free format)</code>, description: <>Used to define the width of the map that will be used in the block, the format can be any allowed by css</>},
+          ],
+          [
+            'Map height',
+            { type: <code>Map height →  input(free format)</code>, description: <>Used to define the height of the map that will be used in the block, the format can be any allowed by CSS</>},
+          ],
+          [
+            'url image location (optional)',
+            { type: <code>url image location → input</code>, description: <>Used to add a page address to the block map of an image of the selected place on the map, this option is optional</>},
+          ],
+          [
+            'Classes for the icon (optional)',
+            { type: <code>Classes for the icon → input</code>, description: <>Used to add classes to the block map icon</>},
+          ],
+          [
+            'Height icon',
+            { type: <code>Height icon → input(number)</code>, description: <>Used to define the height of the map icon</>},
+          ],
+          [
+            'Width icon',
+            { type: <code>Width icon → input(number)</code>, description: <>Used to define the width of the map icon</>},
+          ],
+          [
+            'Show title',
+            { type: <code>Show title → select(yes / no)</code>, description: <>Used to define whether the title will be displayed in the block</>},
+          ],
+          [
+            'Title Alignment ',
+            { type: <code>Title Alignment → select(positions)</code>, description: <>Used to define the position of the title horizontally in the block</>},
+          ],
+          [
+            'Font size main title',
+            { type: <code>Font size main title→ input(number)</code>, description: <>Used to define the size of the block title</>},
+          ],
+          [
+            'Main title color',
+            { type: <code>Main title color → RGB</code>, description: <>Used to define a color for the main title of the block</>},
+          ],
+          [
+            'Title color',
+            { type: <code>Title color → select (colors)</code>, description: <>Used to define the color that the title will use</>},
+          ],
+        ]
+      }
+    }
   ]
 }
