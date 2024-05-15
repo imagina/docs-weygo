@@ -1,5 +1,6 @@
 ---
 title: "Slider OWL"
+
 ---
 
 import {TableTabs} from '@site/src/components/table/table.jsx';

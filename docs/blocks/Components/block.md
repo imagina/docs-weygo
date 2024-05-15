@@ -1,5 +1,6 @@
 ---
 title: "Block"
+sidebar_position: 1
 ---
 
 import {TableTabs} from '@site/src/components/table/table.jsx';
@@ -14,7 +15,7 @@ This component is generally used in blocks, it is used to modify the characteris
 <TableTabs tabsContent={Block} />
 
 ### Example of block 
-  #### Background options:
+#### Background options:
 
   ```CSS
   {
@@ -26,7 +27,7 @@ This component is generally used in blocks, it is used to modify the characteris
   }
  ``` 
 
-  #### Custom button configuration:
+#### Custom button configuration:
 
 ```CSS
   {
