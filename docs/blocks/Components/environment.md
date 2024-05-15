@@ -5,6 +5,8 @@ title: "Custom environment"
 import {TableTabs} from '@site/src/components/table/table.jsx';
 import {contentEnvironment, Environment} from './schemes/schemeQblock.jsx';
 
+This component is unique where it is used in a single type of block called Custom environment, it is used to modify the characteristics of the Custom environment block
+
 ## Content
 <TableTabs tabsContent={contentEnvironment} />
 
@@ -34,3 +36,6 @@ import {contentEnvironment, Environment} from './schemes/schemeQblock.jsx';
   "transition": ".4s"
 }
 ```
+
+## Block
+The block component is used in conjunction with carousel, this happens because the block component is a general component, if you want to know more about the block [click here](./block)
