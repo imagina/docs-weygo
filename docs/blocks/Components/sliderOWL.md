@@ -3,7 +3,7 @@ title: "Slider OWL"
 ---
 
 import {TableTabs} from '@site/src/components/table/table.jsx';
-import {sliderOWL} from './schemes/schemeQblock.jsx';
+import {sliderOWL} from './schemes/schemeComponentIsite.jsx';
 
 This component is unique in that it is used in a single type of block called SliderOWL, it is used to modify the unique characteristics of the sliders being used, it is responsible for their visualization and their form of repetition.
 

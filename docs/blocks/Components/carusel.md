@@ -3,7 +3,7 @@ title: "Carousel"
 ---
 
 import {TableTabs} from '@site/src/components/table/table.jsx';
-import {contentCarousel,carousel} from './schemes/schemeQblock.jsx';
+import {contentCarousel,carousel} from './schemes/schemeComponentIsite.jsx';
 
 This component is unique where it is used in a single type of block called a carousel, it is used to modify the characteristics of the carousel, it is responsible for their visualization and their form of repetition.
 

@@ -3,7 +3,7 @@ title: "Element"
 ---
 
 import {TableTabs} from '@site/src/components/table/table.jsx';
-import {Element} from './schemes/schemeQblock.jsx';
+import {Element} from './schemes/schemeComponentIsite.jsx';
 
 This component is generally used in blocks, it is used to modify most of the base characteristics of the elements that can be used in the block.
 
