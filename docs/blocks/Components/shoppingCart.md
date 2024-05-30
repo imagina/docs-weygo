@@ -3,7 +3,7 @@ title: "shopping cart"
 ---
 
 import {TableTabs} from '@site/src/components/table/table.jsx';
-import {shopping} from './schemes/schemeQblock.jsx';
+import {shopping} from './schemes/schemeComponentReamining.jsx';
 
 This component is unique where it is used in a single type of block called shopping cart, it is used to modify the characteristics of the shopping cart block
 

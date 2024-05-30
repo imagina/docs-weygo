@@ -3,7 +3,7 @@ title: "Wish list"
 ---
 
 import {TableTabs} from '@site/src/components/table/table.jsx';
-import {contentWishList,wishList} from './schemes/schemeQblock.jsx';
+import {contentWishList,wishList} from './schemes/schemeComponentReamining.jsx';
 
 This component is unique in that it is used in a single type of block called a wish list, it is used to modify the characteristics of the wish list.
 
