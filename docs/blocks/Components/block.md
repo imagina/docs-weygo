@@ -3,7 +3,7 @@ title: "Block"
 ---
 
 import {TableTabs} from '@site/src/components/table/table.jsx';
-import {contentBlock,Block} from './schemes/schemeComponentIsite.jsx';
+import {contentBlock,Block} from './schemes/schemeComponentBuilder.jsx';
 
 This component is generally used in blocks, it is used to modify the characteristics of the block container
 
